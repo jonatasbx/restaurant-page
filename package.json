@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack serve",
+    "build": "webpack",
+    "deploy": "webpack && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -12,8 +14,8 @@
   },
   "keywords": [],
   "author": "",
+  "type": "module",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/jonatasbx/restaurant-page/issues"
   },
