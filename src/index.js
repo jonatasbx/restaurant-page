@@ -1,3 +1,5 @@
-import "./styles.css"
+// src/index.js
+import "./styles.css";
+import loadHome from "./home.js";
 
-console.log("Meu restaurante")
+loadHome();
