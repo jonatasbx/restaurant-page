@@ -14,9 +14,14 @@ const tabs = {
 };
 
 // limpa o #content e carrega a aba escolhida
+// limpa o #content, carrega a aba escolhida e destaca o botão dela
 function showTab(name) {
   content.textContent = "";
   tabs[name]();
+
+  document.querySelectorAll("nav button").forEach((button) => {
+    button.classList.toggle("active", button.dataset.tab === name);
+  });
 }
 
 // um ouvinte de clique para cada botão do menu

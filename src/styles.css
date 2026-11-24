@@ -1,0 +1,5 @@
+/* botão da aba ativa */
+nav button.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
