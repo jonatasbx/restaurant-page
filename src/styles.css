@@ -168,3 +168,33 @@ nav button.active {
     color: var(--verde);
     margin: 12px 16px 16px;
 }
+
+/* ===== Contato ===== */
+.contact {
+    background-color: var(--branco);
+    border-radius: var(--raio);
+    box-shadow: 0 4px 12px rgba(59, 42, 32, 0.12);
+    padding: 24px 32px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    margin-top: 0;
+}
+
+.contact a {
+    color: var(--verde);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact .horario {
+    background-color: var(--creme);
+    max-width: none;
+    margin: 24px 0 0;
+}
