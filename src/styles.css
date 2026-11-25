@@ -36,9 +36,39 @@ h2 {
     padding: 32px 20px;
 }
 
-/* botão da aba ativa */
+/* ===== Cabeçalho e menu ===== */
+header {
+    background-color: var(--terracota);
+    padding: 16px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav button {
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--branco);
+    background-color: transparent;
+    border: 2px solid var(--branco);
+    border-radius: 999px;
+    padding: 8px 22px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 nav button.active {
-    font-weight: bold;
-    text-decoration: underline;
+    background-color: var(--mostarda);
+    border-color: var(--mostarda);
+    color: var(--marrom);
 }
 
