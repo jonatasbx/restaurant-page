@@ -1,5 +1,44 @@
+/* ===== Identidade visual: cores e fontes ===== */
+:root {
+    --terracota: #b5502f;
+    --mostarda: #e0a526;
+    --verde: #4f7a4a;
+    --creme: #fbf4e6;
+    --marrom: #3b2a20;
+    --branco: #ffffff;
+    --raio: 16px;
+    --fonte-titulo: "Alfa Slab One", Georgia, serif;
+    --fonte-texto: "Nunito", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte-texto);
+    color: var(--marrom);
+    background-color: var(--creme);
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    color: var(--terracota);
+}
+
+#content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+
 /* botão da aba ativa */
 nav button.active {
     font-weight: bold;
     text-decoration: underline;
 }
+
