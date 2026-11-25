@@ -1,5 +1,6 @@
 // src/home.js
 import homeImage from "./images/home.jpg";
+import criarHorario from "./horario.js";
 
 export default function loadHome() {
   const content = document.querySelector("#content");
@@ -29,34 +30,13 @@ export default function loadHome() {
     "macaxeira e manteiga de garrafa. Aqui a comida é farta e o atendimento " +
     "é como em casa.";
 
-  // bloco de horário
-  const hours = document.createElement("div");
-  hours.classList.add("horario");
-
-  const hoursTitle = document.createElement("h2");
-  hoursTitle.textContent = "Horário de funcionamento";
-
-  const list = document.createElement("ul");
-  const schedule = [
-    "Terça a sexta: 11h às 15h e 18h às 23h",
-    "Sábado e domingo: 11h às 23h",
-    "Segunda: fechado",
-  ];
-  schedule.forEach((line) => {
-    const item = document.createElement("li");
-    item.textContent = line;
-    list.appendChild(item);
-  });
-
-  hours.appendChild(hoursTitle);
-  hours.appendChild(list);
 
   // monta tudo dentro da Home, na ordem em que aparece na tela
   home.appendChild(image);
   home.appendChild(title);
   home.appendChild(slogan);
   home.appendChild(about);
-  home.appendChild(hours);
+  home.appendChild(criarHorario());
 
   // e coloca a Home dentro do #content
   content.appendChild(home);

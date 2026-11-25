@@ -13,7 +13,6 @@ const tabs = {
   contact: loadContact,
 };
 
-// limpa o #content e carrega a aba escolhida
 // limpa o #content, carrega a aba escolhida e destaca o botão dela
 function showTab(name) {
   content.textContent = "";
